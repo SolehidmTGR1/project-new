@@ -1,0 +1,9 @@
+Imports MySql.Data.MySqlClient
+Public Class Form1
+    Dim cn As New MySqlConnection
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        cn.ConnectionString = "server=localhost;user=root;password=;database=buku;allow user variables=true"
+        cn.Open()
+        MsgBox("Orang awam coba copas bol tapi sukses ha..ha..")
+    End Sub
+End Class
